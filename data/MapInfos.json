@@ -1,0 +1,19 @@
+[
+null,
+{"id":1,"expanded":false,"name":"キャラ作成場","order":9,"parentId":14,"scrollX":819,"scrollY":461},
+{"id":2,"expanded":false,"name":"スタートマップ","order":1,"parentId":0,"scrollX":810,"scrollY":452.5},
+{"id":3,"expanded":true,"name":"ターミナル","order":3,"parentId":13,"scrollX":811,"scrollY":815},
+{"id":4,"expanded":false,"name":"お庭","order":16,"parentId":15,"scrollX":819,"scrollY":461},
+{"id":5,"expanded":false,"name":"外","order":5,"parentId":13,"scrollX":832,"scrollY":453},
+{"id":6,"expanded":true,"name":"闘技場","order":8,"parentId":14,"scrollX":811,"scrollY":461},
+{"id":7,"expanded":false,"name":"アバター","order":4,"parentId":13,"scrollX":819,"scrollY":461},
+{"id":8,"expanded":false,"name":"バトルマップ","order":15,"parentId":15,"scrollX":819,"scrollY":461},
+{"id":9,"expanded":false,"name":"スタンバイルーム 1on1","order":10,"parentId":14,"scrollX":819,"scrollY":461},
+{"id":10,"expanded":false,"name":"スタンバイルーム 2on2","order":11,"parentId":14,"scrollX":819,"scrollY":461},
+{"id":11,"expanded":false,"name":"練習","order":14,"parentId":15,"scrollX":819,"scrollY":461},
+{"id":12,"expanded":false,"name":"バトルマップ","order":12,"parentId":14,"scrollX":819,"scrollY":461},
+{"id":13,"expanded":true,"name":"輪廻の摩天楼","order":2,"parentId":0,"scrollX":819,"scrollY":461},
+{"id":14,"expanded":true,"name":"コマンドバトル","order":7,"parentId":0,"scrollX":819,"scrollY":461},
+{"id":15,"expanded":true,"name":"製作用","order":13,"parentId":0,"scrollX":819,"scrollY":461.5},
+{"id":16,"expanded":false,"name":"MOB生成場","order":6,"parentId":13,"scrollX":819,"scrollY":461}
+]

@@ -1,0 +1,42 @@
+　こちらは、ひきも記（以下略）のtomoaky様作ジャンプアクション拡張プラグイン『パッドコンフィグ』と併用する場合の説明ドキュメントです。併用しない場合はこちらの説明を読む必要はありません。
+
+　併用する場合、まずプラグイン管理画面を開いて、「TMJAPadConfig」が「AKUNOU_OptionBase」と「AKUNOU_OptionDefault」(『デフォルトに戻す』コマンドを追加する場合のみ必要)より下に来るようにして下さい。
+　次に、プロジェクトフォルダ内の「TMJAPadConfig.js」を開いて、382行目（383行目の })(); の直前の行）に以下をコピペして下さい。
+
+// ここから
+
+  Window_Options.prototype.makeCommandList = function() {
+    this.addExtraOptions();
+    this.addGeneralOptions();
+    this.addVolumeOptions();
+    this.addPadOptions();
+    this.addDefaultOptions();
+    this._padButtons = ['ok', 'cancel', 'menu', 'pageup',
+                      'pagedown', 'attack', 'jump', 'dash'];
+    this._padButtonNames = ['決定', 'キャンセル', 'メニュー', 'キャラ変更(前)',
+                            'キャラ変更(次)', '攻撃', 'ジャンプ', 'ダッシュ'];
+  };
+
+  var akunou9_defaultAll = Window_Options.prototype.defaultAll;
+
+  Window_Options.prototype.defaultAll = function() {
+    akunou9_defaultAll.call(this);
+    this.changeValue('padButton1', defaultPadButtons['padButton1']);
+    this.changeValue('padButton2', defaultPadButtons['padButton2']);
+    this.changeValue('padButton3', defaultPadButtons['padButton3']);
+    this.changeValue('padButton4', defaultPadButtons['padButton4']);
+    this.changeValue('padButton5', defaultPadButtons['padButton5']);
+    this.changeValue('padButton6', defaultPadButtons['padButton6']);
+    this.changeValue('padButton7', defaultPadButtons['padButton7']);
+    this.changeValue('padButton8', defaultPadButtons['padButton8']);
+    this.changeValue('padButton9', defaultPadButtons['padButton9']);
+    this.changeValue('padButton10', defaultPadButtons['padButton10']);
+    this.changeValue('padButton11', defaultPadButtons['padButton11']);
+    this.changeValue('padButton12', defaultPadButtons['padButton12']);
+  };
+
+// ここまで
+
+以上で、『パッドコンフィグ』との併用対応は完了です。
+
+　なお、プラグインパラメータ「TMJAPadConfig」の optionWindowWidth と「AKUNOU_OptionBase」の Window Options Width の項目の役目は被っていますが、併用する場合「AKUNOU_OptionBase」より「TMJAPadConfig」を下に置くことが必須なので、より下にある「TMJAPadConfig」の optionWindowWidth の方が優先されます。
